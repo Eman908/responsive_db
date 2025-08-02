@@ -1,0 +1,20 @@
+{
+    "hello": "مرحباً إيمان",
+    "name": "إيمان ثروت",
+    "email": "emantharwat102@gmail.com",
+    "Dashboard": "لوحة التحكم",
+    "My_Transaction": "معاملاتي",
+    "Statistics": "الإحصائيات",
+    "Wallet_Account": "محفظتي",
+    "My_Investments": "استثماراتي",
+    "Setting_system": "إعدادات النظام",
+    "Logout_account": "تسجيل الخروج",
+    "Light": "فاتح",
+    "Dark": "داكن",
+    "All_Expenses": "كل النفقات",
+    "Monthly": "شهري",
+    "Income": "الدخل",
+    "April_2022": "أبريل 2022",
+    "Balance": "الرصيد",
+    "Expense": "المصروفات"
+}

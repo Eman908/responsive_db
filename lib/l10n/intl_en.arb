@@ -1,0 +1,21 @@
+{
+    "hello": "hello eman",
+    "name": "Eman Tharwat",
+    "email": "emantharwat102@gmail.com",
+    "Dashboard": "Dashboard",
+    "My_Transaction": "My Transaction",
+    "Statistics": "Statistics",
+    "Wallet_Account": "Wallet Account",
+    "My_Investments": "My Investments",
+    "Setting_system": "Setting system",
+    "Logout_account": "Logout account",
+    "Light": "Light",
+    "Dark": "Dark",
+    "All_Expenses": "All Expenses",
+    "Monthly": "Monthly",
+    "Income": "Income",
+    "April_2022": "April 2022",
+    "Balance": "Balance",
+    "Expense": "Expense",
+    "Quick_invoice": "Quick Invoice"
+}

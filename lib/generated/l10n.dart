@@ -188,6 +188,111 @@ class S {
       args: [],
     );
   }
+
+  /// `Lastest Transactions`
+  String get Lastest_Transactions {
+    return Intl.message(
+      'Lastest Transactions',
+      name: 'Lastest_Transactions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Madrani Andi`
+  String get Madrani_Andi {
+    return Intl.message(
+      'Madrani Andi',
+      name: 'Madrani_Andi',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Josua Nunito`
+  String get Josua_Nunito {
+    return Intl.message(
+      'Josua Nunito',
+      name: 'Josua_Nunito',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Type customer name`
+  String get Type_customer_name {
+    return Intl.message(
+      'Type customer name',
+      name: 'Type_customer_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Type customer email`
+  String get Type_customer_email {
+    return Intl.message(
+      'Type customer email',
+      name: 'Type_customer_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Customer name`
+  String get Customer_name {
+    return Intl.message(
+      'Customer name',
+      name: 'Customer_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Customer email`
+  String get Customer_email {
+    return Intl.message(
+      'Customer email',
+      name: 'Customer_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Item name`
+  String get Item_name {
+    return Intl.message('Item name', name: 'Item_name', desc: '', args: []);
+  }
+
+  /// `Item mount`
+  String get Item_mount {
+    return Intl.message('Item mount', name: 'Item_mount', desc: '', args: []);
+  }
+
+  /// `Send money`
+  String get send_money {
+    return Intl.message('Send money', name: 'send_money', desc: '', args: []);
+  }
+
+  /// `Add more details`
+  String get Add_details {
+    return Intl.message(
+      'Add more details',
+      name: 'Add_details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name card`
+  String get Name_card {
+    return Intl.message('Name card', name: 'Name_card', desc: '', args: []);
+  }
+
+  /// `My Card`
+  String get MyCard {
+    return Intl.message('My Card', name: 'MyCard', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

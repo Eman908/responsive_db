@@ -3,6 +3,7 @@ import 'package:admin_db/core/utils/app_assets.dart';
 import 'package:admin_db/core/utils/app_colors.dart';
 import 'package:admin_db/generated/l10n.dart';
 import 'package:admin_db/models/drawer_list_item_model.dart';
+import 'package:admin_db/models/info_card_model.dart';
 import 'package:admin_db/views/widgets/drawer_list_item_builder.dart';
 import 'package:admin_db/views/widgets/inactive_drawer_list_item.dart';
 import 'package:admin_db/views/widgets/toggle_button_list.dart';
@@ -26,9 +27,11 @@ class CustomDrawer extends StatelessWidget {
             const SliverToBoxAdapter(child: ToggleButtonList()),
             SliverToBoxAdapter(
               child: UserInfoCard(
-                name: S.of(context).name,
-                email: S.of(context).email,
-                image: Assets.kImagesAva0,
+                item: InfoCardModel(
+                  email: S.of(context).email,
+                  image: Assets.kImagesAva0,
+                  name: S.of(context).name,
+                ),
               ),
             ),
             const SliverToBoxAdapter(child: SizedBox(height: 8)),

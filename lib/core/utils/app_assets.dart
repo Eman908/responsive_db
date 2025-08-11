@@ -7,7 +7,8 @@ abstract class Assets {
 
   static const String kImagesBalance = "assets/images/balance.svg";
 
-  static const String kImagesCard = "assets/images/card.svg";
+  static const String kCardLight = "assets/images/card light.png";
+  static const String kCardDark = "assets/images/card dark.png";
 
   static const String kImagesDashboard = "assets/images/dashboard.svg";
 

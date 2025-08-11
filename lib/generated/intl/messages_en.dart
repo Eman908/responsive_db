@@ -22,24 +22,43 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "Add_details": MessageLookupByLibrary.simpleMessage("Add more details"),
     "All_Expenses": MessageLookupByLibrary.simpleMessage("All Expenses"),
     "April_2022": MessageLookupByLibrary.simpleMessage("April 2022"),
     "Balance": MessageLookupByLibrary.simpleMessage("Balance"),
+    "Customer_email": MessageLookupByLibrary.simpleMessage("Customer email"),
+    "Customer_name": MessageLookupByLibrary.simpleMessage("Customer name"),
     "Dark": MessageLookupByLibrary.simpleMessage("Dark"),
     "Dashboard": MessageLookupByLibrary.simpleMessage("Dashboard"),
     "Expense": MessageLookupByLibrary.simpleMessage("Expense"),
     "Income": MessageLookupByLibrary.simpleMessage("Income"),
+    "Item_mount": MessageLookupByLibrary.simpleMessage("Item mount"),
+    "Item_name": MessageLookupByLibrary.simpleMessage("Item name"),
+    "Josua_Nunito": MessageLookupByLibrary.simpleMessage("Josua Nunito"),
+    "Lastest_Transactions": MessageLookupByLibrary.simpleMessage(
+      "Lastest Transactions",
+    ),
     "Light": MessageLookupByLibrary.simpleMessage("Light"),
     "Logout_account": MessageLookupByLibrary.simpleMessage("Logout account"),
+    "Madrani_Andi": MessageLookupByLibrary.simpleMessage("Madrani Andi"),
     "Monthly": MessageLookupByLibrary.simpleMessage("Monthly"),
+    "MyCard": MessageLookupByLibrary.simpleMessage("My Card"),
     "My_Investments": MessageLookupByLibrary.simpleMessage("My Investments"),
     "My_Transaction": MessageLookupByLibrary.simpleMessage("My Transaction"),
+    "Name_card": MessageLookupByLibrary.simpleMessage("Name card"),
     "Quick_invoice": MessageLookupByLibrary.simpleMessage("Quick Invoice"),
     "Setting_system": MessageLookupByLibrary.simpleMessage("Setting system"),
     "Statistics": MessageLookupByLibrary.simpleMessage("Statistics"),
+    "Type_customer_email": MessageLookupByLibrary.simpleMessage(
+      "Type customer email",
+    ),
+    "Type_customer_name": MessageLookupByLibrary.simpleMessage(
+      "Type customer name",
+    ),
     "Wallet_Account": MessageLookupByLibrary.simpleMessage("Wallet Account"),
     "email": MessageLookupByLibrary.simpleMessage("emantharwat102@gmail.com"),
     "hello": MessageLookupByLibrary.simpleMessage("hello eman"),
     "name": MessageLookupByLibrary.simpleMessage("Eman Tharwat"),
+    "send_money": MessageLookupByLibrary.simpleMessage("Send money"),
   };
 }

@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:admin_db/core/utils/theme.dart';
 import 'package:admin_db/cubits/active_button/active_button_cubit.dart';
@@ -31,6 +33,12 @@ class DashBoard extends StatelessWidget {
                   state is ToggleButtonLang ? state.locale : const Locale('en');
               return MaterialApp(
                 debugShowCheckedModeBanner: false,
+                scrollBehavior: ScrollConfiguration.of(context).copyWith(
+                  dragDevices: {
+                    PointerDeviceKind.touch,
+                    PointerDeviceKind.mouse,
+                  },
+                ),
                 locale: locale,
                 supportedLocales: S.delegate.supportedLocales,
                 localizationsDelegates: const [

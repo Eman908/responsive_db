@@ -1,6 +1,6 @@
-import 'package:admin_db/views/widgets/all_expenses.dart';
 import 'package:admin_db/views/widgets/custom_drawer.dart';
-import 'package:admin_db/views/widgets/quick_invoice.dart';
+import 'package:admin_db/views/widgets/main_section.dart';
+import 'package:admin_db/views/widgets/my_card_section.dart';
 import 'package:flutter/material.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -12,10 +12,8 @@ class DesktopLayout extends StatelessWidget {
       spacing: 32,
       children: [
         Expanded(child: CustomDrawer()),
-        Expanded(
-          flex: 2,
-          child: Column(spacing: 24, children: [AllExpenses(), QuickInvoice()]),
-        ),
+        Expanded(flex: 2, child: MainSection()),
+        Expanded(child: MyCardSection()),
       ],
     );
   }

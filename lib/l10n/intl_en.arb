@@ -17,5 +17,18 @@
     "April_2022": "April 2022",
     "Balance": "Balance",
     "Expense": "Expense",
-    "Quick_invoice": "Quick Invoice"
+    "Quick_invoice": "Quick Invoice",
+    "Lastest_Transactions": "Lastest Transactions",
+    "Madrani_Andi": "Madrani Andi",
+    "Josua_Nunito": "Josua Nunito",
+    "Type_customer_name": "Type customer name",
+    "Type_customer_email": "Type customer email",
+    "Customer_name": "Customer name",
+    "Customer_email": "Customer email",
+    "Item_name": "Item name",
+    "Item_mount": "Item mount",
+    "send_money": "Send money",
+    "Add_details": "Add more details",
+    "Name_card": "Name card",
+    "MyCard": "My Card"
 }

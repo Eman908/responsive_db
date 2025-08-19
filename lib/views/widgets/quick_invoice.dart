@@ -3,6 +3,7 @@ import 'package:admin_db/core/utils/app_colors.dart';
 import 'package:admin_db/generated/l10n.dart';
 import 'package:admin_db/views/widgets/custom_button.dart';
 import 'package:admin_db/views/widgets/custom_container.dart';
+import 'package:admin_db/views/widgets/custom_divider.dart';
 import 'package:admin_db/views/widgets/form_builder.dart';
 import 'package:admin_db/views/widgets/latest_transactions.dart';
 import 'package:admin_db/views/widgets/quick_invoice_header.dart';
@@ -21,13 +22,7 @@ class QuickInvoice extends StatelessWidget {
           const QuickInvoiceHeader(),
           const SizedBox(height: 24),
           const LatestTransactions(),
-          Divider(
-            height: 48,
-            color:
-                AdaptiveTheme.of(context).mode.isLight
-                    ? LightThemeColors.stroke
-                    : DarkThemeColors.stroke,
-          ),
+          const CustomDivider(),
           const FormBuilder(),
           const SizedBox(height: 24),
           Row(

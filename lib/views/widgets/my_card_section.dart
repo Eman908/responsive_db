@@ -18,7 +18,7 @@ class _MyCardSectionState extends State<MyCardSection> {
   void initState() {
     pageController = PageController();
     pageController.addListener(() {
-      currentPage = pageController.page!.toInt();
+      currentPage = pageController.page!.round();
       setState(() {});
     });
     super.initState();

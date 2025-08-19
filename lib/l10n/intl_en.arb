@@ -30,5 +30,16 @@
     "send_money": "Send money",
     "Add_details": "Add more details",
     "Name_card": "Name card",
-    "MyCard": "My Card"
+    "MyCard": "My Card",
+    "Transaction_History": "Transaction History",
+    "see_all": "See all",
+    "Cash_Withdrawal": "Cash Withdrawal",
+    "LandingPageproject": "Landing Page project",
+    "JuniMobileAppproject": "Juni Mobile App project",
+    "13Apr": "13 Apr, 2022 at 3:30 PM",
+    "Design_service": "Design service",
+    "Design_product": "Design product",
+    "Product_royalti": "Product royalti",
+    "Others": "Others",
+    "seedetails": "See details"
 }

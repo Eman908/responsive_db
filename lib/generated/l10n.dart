@@ -293,6 +293,93 @@ class S {
   String get MyCard {
     return Intl.message('My Card', name: 'MyCard', desc: '', args: []);
   }
+
+  /// `Transaction History`
+  String get Transaction_History {
+    return Intl.message(
+      'Transaction History',
+      name: 'Transaction_History',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `See all`
+  String get see_all {
+    return Intl.message('See all', name: 'see_all', desc: '', args: []);
+  }
+
+  /// `Cash Withdrawal`
+  String get Cash_Withdrawal {
+    return Intl.message(
+      'Cash Withdrawal',
+      name: 'Cash_Withdrawal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Landing Page project`
+  String get LandingPageproject {
+    return Intl.message(
+      'Landing Page project',
+      name: 'LandingPageproject',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Juni Mobile App project`
+  String get JuniMobileAppproject {
+    return Intl.message(
+      'Juni Mobile App project',
+      name: 'JuniMobileAppproject',
+      desc: '',
+      args: [],
+    );
+  }
+
+  // skipped getter for the '13Apr' key
+
+  /// `Design service`
+  String get Design_service {
+    return Intl.message(
+      'Design service',
+      name: 'Design_service',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Design product`
+  String get Design_product {
+    return Intl.message(
+      'Design product',
+      name: 'Design_product',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Product royalti`
+  String get Product_royalti {
+    return Intl.message(
+      'Product royalti',
+      name: 'Product_royalti',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Others`
+  String get Others {
+    return Intl.message('Others', name: 'Others', desc: '', args: []);
+  }
+
+  /// `See details`
+  String get seedetails {
+    return Intl.message('See details', name: 'seedetails', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

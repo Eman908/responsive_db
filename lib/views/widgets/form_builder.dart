@@ -23,18 +23,24 @@ class FormBuilder extends StatelessWidget {
       ),
       FormModel(hintText: S.of(context).Item_mount, title: 'USD'),
     ];
-    return GridView.builder(
-      physics: const NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      itemCount: items.length,
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        mainAxisSpacing: 16,
-        crossAxisSpacing: 24,
-      ),
-      itemBuilder: (BuildContext context, int index) {
-        return TitleTextField(item: items[index]);
-      },
+    return Column(
+      spacing: 24,
+      children: [
+        Row(
+          spacing: 16,
+          children: [
+            Expanded(child: TitleTextField(item: items[0])),
+            Expanded(child: TitleTextField(item: items[1])),
+          ],
+        ),
+        Row(
+          spacing: 16,
+          children: [
+            Expanded(child: TitleTextField(item: items[2])),
+            Expanded(child: TitleTextField(item: items[3])),
+          ],
+        ),
+      ],
     );
   }
 }

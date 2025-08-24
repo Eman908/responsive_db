@@ -45,7 +45,7 @@ class _IncomeChartState extends State<IncomeChart> {
       color: color,
       showTitle: false,
 
-      radius: activeIndex == index ? 30 : 20,
+      radius: activeIndex == index ? 40 : 30,
     );
   }
 }

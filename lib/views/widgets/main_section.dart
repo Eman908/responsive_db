@@ -8,7 +8,6 @@ class MainSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
-      padding: EdgeInsets.only(top: 40, bottom: 40),
       child: Column(spacing: 24, children: [AllExpenses(), QuickInvoice()]),
     );
   }

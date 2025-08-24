@@ -13,7 +13,11 @@ class ActiveDrawerItemList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(item.icon),
-      title: Text(item.title, style: AppTextStyles.sB16(context)),
+      title: FittedBox(
+        alignment: AlignmentDirectional.centerStart,
+        fit: BoxFit.scaleDown,
+        child: Text(item.title, style: AppTextStyles.sB16(context)),
+      ),
       trailing: Container(
         width: 3,
         decoration: BoxDecoration(

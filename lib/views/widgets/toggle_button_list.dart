@@ -9,41 +9,78 @@ class ToggleButtonList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.sizeOf(context).width;
     return BlocBuilder<ToggleButtonCubit, ToggleButtonState>(
       builder: (context, state) {
         final cubit = context.read<ToggleButtonCubit>();
 
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 24),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              CutsomToggleButton(
-                text1: 'EN',
-                text2: 'AR',
+          child:
+              width <= 1015 && width >= 800
+                  ? Column(
+                    children: [
+                      CutsomToggleButton(
+                        text1: 'EN',
+                        text2: 'AR',
 
-                onPressed: (index) {
-                  cubit.selectLanguage(index);
-                  if (index == 0) {
-                    const Locale('en');
-                  } else {
-                    const Locale('ar');
-                  }
-                },
-                isSelected: cubit.selectionsLang,
-              ),
-              const SizedBox(width: 8),
-              CutsomToggleButton(
-                text1: 'Light',
-                text2: 'Dark',
+                        onPressed: (index) {
+                          cubit.selectLanguage(index);
+                          if (index == 0) {
+                            const Locale('en');
+                          } else {
+                            const Locale('ar');
+                          }
+                        },
+                        isSelected: cubit.selectionsLang,
+                      ),
 
-                onPressed: (index) {
-                  cubit.selectTheme(context, index);
-                },
-                isSelected: cubit.selectionsTheme,
-              ),
-            ],
-          ),
+                      const SizedBox(height: 8),
+
+                      CutsomToggleButton(
+                        text1: 'Light',
+                        text2: 'Dark',
+
+                        onPressed: (index) {
+                          cubit.selectTheme(context, index);
+                        },
+                        isSelected: cubit.selectionsTheme,
+                      ),
+                    ],
+                  )
+                  : Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: CutsomToggleButton(
+                          text1: 'EN',
+                          text2: 'AR',
+
+                          onPressed: (index) {
+                            cubit.selectLanguage(index);
+                            if (index == 0) {
+                              const Locale('en');
+                            } else {
+                              const Locale('ar');
+                            }
+                          },
+                          isSelected: cubit.selectionsLang,
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: CutsomToggleButton(
+                          text1: 'Light',
+                          text2: 'Dark',
+
+                          onPressed: (index) {
+                            cubit.selectTheme(context, index);
+                          },
+                          isSelected: cubit.selectionsTheme,
+                        ),
+                      ),
+                    ],
+                  ),
         );
       },
     );

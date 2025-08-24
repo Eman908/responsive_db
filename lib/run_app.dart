@@ -7,6 +7,7 @@ import 'package:admin_db/cubits/toggle_button/toggle_button_cubit.dart';
 import 'package:admin_db/cubits/toggle_button/toggle_button_state.dart';
 import 'package:admin_db/generated/l10n.dart';
 import 'package:admin_db/views/dashboard_view.dart';
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -32,13 +33,7 @@ class DashBoard extends StatelessWidget {
               final locale =
                   state is ToggleButtonLang ? state.locale : const Locale('en');
               return MaterialApp(
-                debugShowCheckedModeBanner: false,
-                scrollBehavior: ScrollConfiguration.of(context).copyWith(
-                  dragDevices: {
-                    PointerDeviceKind.touch,
-                    PointerDeviceKind.mouse,
-                  },
-                ),
+                builder: DevicePreview.appBuilder,
                 locale: locale,
                 supportedLocales: S.delegate.supportedLocales,
                 localizationsDelegates: const [
@@ -49,6 +44,13 @@ class DashBoard extends StatelessWidget {
                 ],
                 theme: theme,
                 darkTheme: darkTheme,
+                debugShowCheckedModeBanner: false,
+                scrollBehavior: ScrollConfiguration.of(context).copyWith(
+                  dragDevices: {
+                    PointerDeviceKind.touch,
+                    PointerDeviceKind.mouse,
+                  },
+                ),
                 home: const DashBoardView(),
               );
             },

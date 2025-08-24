@@ -1,4 +1,5 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
+import 'package:admin_db/core/utils/size_config.dart';
 import 'package:flutter/material.dart';
 
 abstract class AppTextStyles {
@@ -133,9 +134,9 @@ double getResponsiveFontSize(BuildContext context, {required double fontSize}) {
 
 double getScaleFactor(BuildContext context) {
   double width = MediaQuery.sizeOf(context).width;
-  if (width < 600) {
+  if (width < SizeConfig.tablet) {
     return width / 550;
-  } else if (width < 900) {
+  } else if (width < SizeConfig.desktop) {
     return width / 1000;
   } else {
     return width / 1920;

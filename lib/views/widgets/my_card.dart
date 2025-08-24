@@ -22,12 +22,15 @@ class MyCard extends StatelessWidget {
             ),
           ),
         ),
-        child: const Padding(
-          padding: EdgeInsets.only(top: 20, left: 32, bottom: 27, right: 24),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [CardHeader(), Expanded(child: SizedBox()), CardBottom()],
-          ),
+        child: const Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Flexible(child: SizedBox(height: 20)),
+            Padding(padding: EdgeInsets.only(left: 32), child: CardHeader()),
+            Expanded(child: SizedBox()),
+            Padding(padding: EdgeInsets.only(right: 24), child: CardBottom()),
+            Flexible(child: SizedBox(height: 27)),
+          ],
         ),
       ),
     );

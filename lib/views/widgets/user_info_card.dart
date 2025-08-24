@@ -18,8 +18,17 @@ class UserInfoCard extends StatelessWidget {
       elevation: 0,
       child: Center(
         child: ListTile(
-          title: Text(item.name, style: AppTextStyles.sSB16(context)),
-          subtitle: Text(item.email, style: AppTextStyles.sR12(context)),
+          title: FittedBox(
+            alignment: AlignmentDirectional.centerStart,
+            fit: BoxFit.scaleDown,
+            child: Text(item.name, style: AppTextStyles.sSB16(context)),
+          ),
+          subtitle: FittedBox(
+            alignment: AlignmentDirectional.centerStart,
+
+            fit: BoxFit.scaleDown,
+            child: Text(item.email, style: AppTextStyles.sR12(context)),
+          ),
           leading: SvgPicture.asset(item.image),
         ),
       ),

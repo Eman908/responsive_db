@@ -12,7 +12,13 @@ class DesktopLayout extends StatelessWidget {
       children: [
         Expanded(child: CustomDrawer()),
         SizedBox(width: 32),
-        Expanded(flex: 2, child: MainSection()),
+        Expanded(
+          flex: 2,
+          child: Padding(
+            padding: EdgeInsets.only(top: 40.0, bottom: 40),
+            child: MainSection(),
+          ),
+        ),
         SizedBox(width: 24),
         Expanded(child: IncomeAndCardSection()),
       ],

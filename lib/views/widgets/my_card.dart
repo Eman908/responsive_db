@@ -26,9 +26,15 @@ class MyCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Flexible(child: SizedBox(height: 20)),
-            Padding(padding: EdgeInsets.only(left: 32), child: CardHeader()),
+            Padding(
+              padding: EdgeInsets.only(left: 32, right: 32),
+              child: CardHeader(),
+            ),
             Expanded(child: SizedBox()),
-            Padding(padding: EdgeInsets.only(right: 24), child: CardBottom()),
+            Padding(
+              padding: EdgeInsets.only(right: 24, left: 24),
+              child: CardBottom(),
+            ),
             Flexible(child: SizedBox(height: 27)),
           ],
         ),

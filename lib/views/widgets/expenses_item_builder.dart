@@ -31,20 +31,27 @@ class ExpensesItemBuilder extends StatelessWidget {
     ];
 
     return Row(
-      children:
-          item.asMap().entries.map((entry) {
-            final index = entry.key;
-            final expItem = entry.value;
+      children: [
+        Expanded(child: AllExpensesItem(item: item[0], index: 0)),
+        const SizedBox(width: 8),
+        Expanded(child: AllExpensesItem(item: item[1], index: 1)),
+        const SizedBox(width: 8),
 
-            final widget = AllExpensesItem(item: expItem, index: index);
+        Expanded(child: AllExpensesItem(item: item[2], index: 2)),
+      ],
+      // item.asMap().entries.map((entry) {
+      //   final index = entry.key;
+      //   final expItem = entry.value;
 
-            return Expanded(
-              child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
-                child: widget,
-              ),
-            );
-          }).toList(),
+      //   final widget = AllExpensesItem(item: expItem, index: index);
+
+      //   return Expanded(
+      //     child: Padding(
+      //       padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
+      //       child: widget,
+      //     ),
+      //   );
+      // }).toList(),
     );
   }
 }

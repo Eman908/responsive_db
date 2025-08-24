@@ -40,34 +40,45 @@ class ActiveExpensesItem extends StatelessWidget {
                     : Colors.black,
           ),
           const SizedBox(height: 34),
-          Text(
-            item.title,
-            style: AppTextStyles.sM16(context).copyWith(
-              color:
-                  AdaptiveTheme.of(context).mode.isLight
-                      ? LightThemeColors.userInfoCard
-                      : DarkThemeColors.userInfoCard,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              item.title,
+              style: AppTextStyles.sM16(context).copyWith(
+                color:
+                    AdaptiveTheme.of(context).mode.isLight
+                        ? LightThemeColors.userInfoCard
+                        : DarkThemeColors.userInfoCard,
+              ),
             ),
           ),
           const SizedBox(height: 8),
-          Text(
-            item.date,
-            style: AppTextStyles.sR14(context).copyWith(
-              color:
-                  AdaptiveTheme.of(context).mode.isLight
-                      ? Colors.white
-                      : Colors.black,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+
+            child: Text(
+              item.date,
+              style: AppTextStyles.sR14(context).copyWith(
+                color:
+                    AdaptiveTheme.of(context).mode.isLight
+                        ? Colors.white
+                        : Colors.black,
+              ),
             ),
           ),
 
           const SizedBox(height: 16),
-          Text(
-            item.price,
-            style: AppTextStyles.sSB20(context).copyWith(
-              color:
-                  AdaptiveTheme.of(context).mode.isLight
-                      ? Colors.white
-                      : Colors.black,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+
+            child: Text(
+              item.price,
+              style: AppTextStyles.sSB20(context).copyWith(
+                color:
+                    AdaptiveTheme.of(context).mode.isLight
+                        ? Colors.white
+                        : Colors.black,
+              ),
             ),
           ),
         ],
